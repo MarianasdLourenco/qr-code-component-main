@@ -1,0 +1,68 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Define color variables */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+}
+
+/* Reset padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Body styles */
+body {
+    min-height: 100svh;
+    font-family: "Outfit", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--Slate-300);
+    padding: 18px;
+    font-size: 0.93rem;
+    font-weight: 400;
+    gap: 1rem;
+}
+
+/* Main container styles */
+main {
+    max-width: 18rem;
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* Main child elements padding */
+main > * {
+    padding: 10px;
+}
+
+/* QR code image styles */
+.qr-code-image {
+    border-radius: 20px;
+    height: auto;
+}
+
+/* Title styles */
+.qr-code-title {
+    font-size: 1.3rem;
+    color: var(--Slate-900);
+    font-weight: 700;
+}
+
+/* Description text styles */
+.qr-code-description {
+    color: var(--Slate-500);
+}
+
+/* Attribution footer styles */
+.attribution {
+    color: var(--Slate-900);
+}
